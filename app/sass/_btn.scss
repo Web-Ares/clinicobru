@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 37px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 49px;
+  color: #000;
+  letter-spacing: -0.5px;
+  @include main-font4();
+  @include transition(all, .3, 0);
+
+  &:hover {
+    color: #fff;
+    background: #000;
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+  .btn {
+
+
+  }
+}
