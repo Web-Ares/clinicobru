@@ -68,21 +68,9 @@
     }
   }
   .btn-main {
-    display: inline-block;
-    vertical-align: top;
     height: 54px;
     padding: 0 30px;
-    border: 2px solid $main-blue-color;
     font-size: 14px;
-    color: $main-text-color;
     line-height: 52px;
-    text-transform: uppercase;
-    @include main-font7();
-    transition: background .3s, color .3s;
-
-    &:hover {
-      background: $main-blue-color;
-      color: $main-white-color;
-    }
   }
 }

@@ -1,0 +1,83 @@
+
+.downloads {
+  padding: 20px 0 40px 0;
+
+  &__item {
+    position: relative;
+    border: 1px solid $main-border-color;
+    padding: 20px 15px;
+    border-bottom: none;
+    box-shadow: 0 4px 10px 0 rgba(1, 1, 1, 0);
+    @include transition(box-shadow, .3, 0);
+
+    &:last-child {
+      border-bottom: 1px solid $main-border-color;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-size: 23px;
+    line-height: 27px;
+    color: $main-title-color;
+    @include main-font7();
+    font-weight: 400;
+    letter-spacing: -0.6px;
+  }
+  &__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    @include main-font1();
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .downloads {
+
+    &__item {
+      padding-right: 210px;
+
+      .btn-main {
+        @include absoluteCenterY();
+        right: 30px;
+      }
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .downloads {
+    padding: 40px 0 120px 0;
+
+    &__item {
+      padding: 55px 410px 51px 58px;
+
+      &:hover {
+        box-shadow: 0 4px 10px 0 rgba(1, 1, 1, 0.08);
+      }
+      .btn-main {
+        right: 100px;
+        padding: 0 39px;
+      }
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+}
+

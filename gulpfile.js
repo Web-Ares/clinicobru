@@ -26,31 +26,15 @@ var paths = {
             ]
         },
         {
-            dist: 'contacts.min.js',
+            dist: 'case-studies.min.js',
             contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.contacts.js'
+                'app/js/jquery.main.js'
             ]
         },
         {
-            dist: 'retail.min.js',
+            dist: 'downloads.min.js',
             contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.retail.js'
-            ]
-        },
-        {
-            dist: 'gallery.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.gallery.js'
-            ]
-        },
-        {
-            dist: 'download.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.download.js'
+                'app/js/jquery.main.js'
             ]
         }
     ],
