@@ -24,7 +24,7 @@
                 _window.on( {
                     resize: function () {
 
-
+                        _drawCanvas()
                     }
                 } );
 
