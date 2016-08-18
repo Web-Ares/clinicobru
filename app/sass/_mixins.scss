@@ -29,6 +29,11 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin main-font7() {
+  font-family: "avenir-black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 //justify
 @mixin justify() {

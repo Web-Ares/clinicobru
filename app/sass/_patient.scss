@@ -1,20 +1,15 @@
 
 .patient {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 99px;
+  padding: 40px 0 0;
 
   &__text {
-    display: inline-block;
-    vertical-align: top;
     width: 100%;
     max-width: 460px;
-    padding-top: 93px;
+    margin-bottom: 40px;
 
     p {
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 18px;
+      line-height: 26px;
       color: $main-text-color;
       letter-spacing: 0;
       @include main-font5();
@@ -22,26 +17,12 @@
   }
   &__profit {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: -186px;
-    min-height: 462px;
-    width: 47.9%;
-    padding: 77px 0 79px 126px;
+    padding: 40px 15px 40px;
+    margin: 0 -15px;
     color: $main-white-color;
-    @include main-font2();
-    font-weight: 900;
+    @include main-font7();
+    background: $main-blue-color;
 
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: url(../img/patient-bg.png) no-repeat;
-      background-size: contain;
-      content: '';
-    }
     > span {
       position: relative;
       display: block;
@@ -53,33 +34,97 @@
     h2 {
       position: relative;
       left: -1px;
-      margin-bottom: 36px;
-      font-size: 48px;
+      margin-bottom: 40px;
+      font-size: 26px;
       text-transform: uppercase;
-      line-height: 46px;
-      font-weight: 900;
-    }
-    .btn {
-      left: -127px;
-      margin-bottom: 78px;
+      line-height: 30px;
+      font-weight: 400;
     }
   }
 }
 
 @media (min-width: $tablet-portrait) {
 
+  .patient {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
 
+    &__text {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &__profit {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: -68px;
+      width: 53.9%;
+      padding: 60px 55px 4px 120px;
+      background: none;
 
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: url(../img/patient-bg.png) no-repeat;
+        background-size: contain;
+        content: '';
+      }
+      .btn {
+        left: -127px;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-landscape) {
-
-
 
 }
 
 @media (min-width: $desktop) {
 
+  .patient {
+    margin-bottom: 99px;
 
+    &__text {
+      width: 100%;
+      max-width: 460px;
+      padding-top: 53px;
+
+      p {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &__profit {
+      left: 2px;
+      margin: -226px 0 0;
+      min-height: 462px;
+      width: 47.9%;
+      padding: 77px 0 79px 126px;
+
+      &:before {
+        background-size: contain;
+      }
+      > span {
+        margin-bottom: 23px;
+        font-size: 18px;
+      }
+      h2 {
+        margin-bottom: 36px;
+        font-size: 48px;
+        line-height: 46px;
+        letter-spacing: -1.3px;
+      }
+      .btn {
+        left: -127px;
+        margin-bottom: 78px;
+      }
+    }
+  }
 
 }

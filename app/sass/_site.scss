@@ -45,8 +45,7 @@
       display: block;
       position: relative;
       margin: 0 auto 15px;
-      @include main-font2();
-      font-weight: 900;
+      @include main-font7();
       text-transform: uppercase;
 
       a {
@@ -135,7 +134,7 @@
   &__footer {
     padding-top: 15px;
     padding-bottom: 15px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $footer-border;
     font-size: 16px;
     letter-spacing: 0;
     @include main-font4();
@@ -160,12 +159,12 @@
       font-size: 16px;
       color: $main-text-color;
       text-transform: uppercase;
-      @include main-font2();
-      font-weight: 900;
+      @include main-font7();
+      font-weight: 400;
     }
     &-info {
       margin-bottom: 20px;
-      color: #999;
+      color: $footer-text-color;
       font-size: 16px;
       line-height: 24px;
       text-align: center;
@@ -176,7 +175,7 @@
     }
     &-contact {
       margin-bottom: 20px;
-      color: #999;
+      color: $footer-text-color;
       font-size: 16px;
       line-height: 24px;
       text-align: center;
@@ -184,13 +183,10 @@
 
       &-list {
 
-        li {
-
-        }
         a {
           position: relative;
           padding-left: 30px;
-          color: #999;
+          color: $footer-text-color;
 
           i {
             position: absolute;
@@ -216,8 +212,7 @@
         display: inline-block;
         position: relative;
         color: $main-blue-color;
-        @include main-font2();
-        font-weight: 900;
+        @include main-font7();
 
         &:after {
           opacity: 0;
@@ -325,7 +320,7 @@
           vertical-align: top;
           display: inline-block;
           font-size: 13px;
-          letter-spacing: 0.2px;
+          letter-spacing: 0;
           color: $header-menu-desktop-color;
           @include transition(color, .3, 0);
 
@@ -360,7 +355,7 @@
       &-inner {
         margin-left: 170px;
         padding: 75px 0 62px 131px;
-        border-left: 1px solid #ddd;
+        border-left: 1px solid $footer-border;
       }
       &-info {
         display: inline-block;

@@ -1,23 +1,14 @@
 
 .our-services {
-  padding: 102px 0 98px;
+  padding: 40px 0;
   text-align: center;
-}
-
-@media (min-width: $tablet-portrait) {
-
-
-
-}
-
-@media (min-width: $tablet-landscape) {
-
-
-
 }
 
 @media (min-width: $desktop) {
 
-
+  .our-services {
+    padding: 102px 0 98px;
+    text-align: center;
+  }
 
 }

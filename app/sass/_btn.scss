@@ -3,17 +3,15 @@
   vertical-align: top;
   position: relative;
   background-color: transparent;
-  font-size: 15px;
-  line-height: 91px;
-  letter-spacing: 0.9px;
+  font-size: 14px;
+  line-height: 78px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: $main-white-color;
-  height: 91px;
+  height: 70px;
   width: 100%;
-  max-width: 368px;
   text-align: center;
-  @include main-font2();
-  font-weight: 900;
+  @include main-font7();
 
   span {
     position: relative;
@@ -25,15 +23,30 @@
     bottom: 0;
     left: 0;
   }
-
+  &_1,
+  &_2,
   &_3 {
-    line-height: 83px;
+    width: 280px;
+  }
+  &_3 {
+    line-height: 60px;
   }
 }
 
-@media (min-width: $tablet-landscape) {
+@media (min-width: $tablet-portrait) {
+
   .btn {
+    font-size: 15px;
+    line-height: 94px;
+    height: 91px;
 
-
+    &_1,
+    &_2,
+    &_3 {
+      width: 368px;
+    }
+    &_3 {
+      line-height: 83px;
+    }
   }
 }

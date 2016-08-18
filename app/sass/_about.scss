@@ -1,75 +1,125 @@
 
 .about {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 73px;
+  margin-bottom: 40px;
 
   &__text {
     width: 100%;
     max-width: 472px;
     @include main-font1();
     font-size: 18px;
-    line-height: 30px;
+    line-height: 26px;
 
     p {
-      margin-bottom: 39px;
+      margin-bottom: 20px;
     }
   }
   &__info {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 52.8%;
-    padding: 3px 0 0;
+    padding: 40px 15px;
+    margin: 0 -15px 40px;
     color: $main-text-color;
+    background: $about-info-bg;
 
-    &:before {
-      position: absolute;
-      top: -52px;
-      left: -80px;
-      width: 109%;
-      height: 103%;
-      background: url(../img/about-bg.png) no-repeat;
-      background-size: contain;
-      content: '';
-    }
     h2 {
       position: relative;
-      margin-bottom: 105px;
-      font-size: 48px;
-      line-height: 46px;
+      margin-bottom: 40px;
+      font-size: 26px;
+      line-height: 30px;
       text-transform: uppercase;
-      font-weight: 900;
+      @include main-font7();
     }
     p {
       position: relative;
       width: 78%;
-      margin-bottom: 58px;
-      font-size: 24px;
-      line-height: 36px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 26px;
       letter-spacing: -0.2px;
-    }
-    .btn {
-      left: 30.7%;
     }
   }
 }
 
 @media (min-width: $tablet-portrait) {
 
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 73px;
 
+    &__text {
+      width: 40%;
 
+      p {
+        margin-bottom: 39px;
+      }
+    }
+    &__info {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 52.8%;
+      padding: 3px 0 0;
+      margin: 0;
+      background: none;
+
+      &:before {
+        position: absolute;
+        top: -52px;
+        left: -47px;
+        width: 120%;
+        height: 100%;
+        background: url(../img/about-bg.png) no-repeat;
+        background-size: contain;
+        content: '';
+      }
+      h2 {
+
+      }
+      p {
+        width: 300px;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-landscape) {
-
-
 
 }
 
 @media (min-width: $desktop) {
 
+  .about {
+    margin-bottom: 73px;
 
+    &__text {
+      width: 100%;
+      max-width: 470px;
+      line-height: 30px;
+    }
+    &__info {
+      width: 52.8%;
+      padding: 3px 0 0;
 
+      &:before {
+        left: -80px;
+        width: 109%;
+        height: 103%;
+      }
+      h2 {
+        margin-bottom: 105px;
+        font-size: 48px;
+        line-height: 46px;
+        letter-spacing: -0.6px;
+      }
+      p {
+        width: 78%;
+        margin-bottom: 58px;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .btn {
+        left: 30.9%;
+      }
+    }
+  }
 }
