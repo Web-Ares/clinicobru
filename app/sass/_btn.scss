@@ -2,20 +2,32 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding: 0 37px;
-  border: 2px solid #000;
-  border-radius: 3px;
   background-color: transparent;
-  font-size: 18px;
-  line-height: 49px;
-  color: #000;
-  letter-spacing: -0.5px;
-  @include main-font4();
-  @include transition(all, .3, 0);
+  font-size: 15px;
+  line-height: 91px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: $main-white-color;
+  height: 91px;
+  width: 100%;
+  max-width: 368px;
+  text-align: center;
+  @include main-font2();
+  font-weight: 900;
 
-  &:hover {
-    color: #fff;
-    background: #000;
+  span {
+    position: relative;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &_3 {
+    line-height: 83px;
   }
 }
 

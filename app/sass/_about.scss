@@ -1,0 +1,75 @@
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 73px;
+
+  &__text {
+    width: 100%;
+    max-width: 472px;
+    @include main-font1();
+    font-size: 18px;
+    line-height: 30px;
+
+    p {
+      margin-bottom: 39px;
+    }
+  }
+  &__info {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 52.8%;
+    padding: 3px 0 0;
+    color: $main-text-color;
+
+    &:before {
+      position: absolute;
+      top: -52px;
+      left: -80px;
+      width: 109%;
+      height: 103%;
+      background: url(../img/about-bg.png) no-repeat;
+      background-size: contain;
+      content: '';
+    }
+    h2 {
+      position: relative;
+      margin-bottom: 105px;
+      font-size: 48px;
+      line-height: 46px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      position: relative;
+      width: 78%;
+      margin-bottom: 58px;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.2px;
+    }
+    .btn {
+      left: 30.7%;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}

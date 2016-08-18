@@ -1,20 +1,18 @@
-$main-blue-color: #5cc9dc;
+$main-blue-color: #295aa7;
 $main-title-color: #000;
 $main-text-color: #000;
 $main-white-color: #fff;
 
 //site
 $site-background: #fff;
-$header-menu-color: $main-blue-color;
-$header-menu-active-color: #000;
-$header-menu-link-color: #434d5a;
-$header-menu-mobile-color: #fff;
+$header-menu-color: #fff;
+$header-menu-desktop-color: #000;
+$header-menu-active-color: #fff;
 $header-menu-back: $main-blue-color;
-$header-menu-btn-back: $main-blue-color;
-$header-menu-btn-back-2: #000;
+$header-menu-btn-back: #295aa7;
 $header-menu-btn-opened: #fff;
-$footer-text-color: #bbb;
-$footer-crafted-color: #191e24;
+$footer-text-color: #999;
+$footer-crafted-color: #bbb;
 
 /*---------- popup ----------*/
 $popup-back: rgba( 0, 0, 0, .9 );

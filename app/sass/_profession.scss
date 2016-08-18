@@ -1,0 +1,110 @@
+
+
+.profession {
+  background: #f7fbff;
+  padding: 111px 0 119px;
+
+  h3 {
+    margin-bottom: 139px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $main-text-color;
+    @include main-font2();
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    height: 400px;
+    padding: 0 38px;
+    border: 1px solid #ddd;
+    background: $main-white-color;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+    span {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      height: 125px;
+      font-size: 30px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: $main-text-color;
+      @include main-font2();
+      font-weight: 900;
+      letter-spacing: 0.6px;
+      @include transition(color, .3, 0);
+    }
+
+    &:hover,
+    &.active{
+      z-index: 10;
+      background: $main-blue-color;
+      transform: scale(1.15);
+
+      span {
+        color: $main-white-color;
+      }
+      svg {
+
+        path,
+        polygon,
+        circle {
+          stroke: $main-white-color;
+          fill: $main-white-color;
+        }
+      }
+    }
+  }
+  &__item-icon {
+    position: relative;
+    height: 247px;
+    margin-bottom: 23px;
+    @include transition(height, .3, .1);
+
+    svg {
+      @include absoluteCenter();
+      width: 129px;
+      height: auto;
+      @include transition(all, .3, .1);
+
+      path,
+      polygon,
+      circle {
+        stroke: $main-blue-color;
+        fill: $main-blue-color;
+        -webkit-transition: all .3s .1s;
+        transition: all .3s .1s;
+
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}
