@@ -250,6 +250,11 @@
     min-height: 227px;
     background-size: cover;
     background-position: center;
+
+    &_inner {
+      padding: 105px 15px 80px;
+      text-align: center;
+    }
   }
   &__centered {
     position: relative;
@@ -263,11 +268,15 @@
     position: relative;
     z-index: 1;
   }
+  &__title {
+    font-size: 37px;
+    line-height: 42px;
+    @include main-font7();
+    font-weight: 400;
+    letter-spacing: -1.3px;
+  }
 }
 
-@media (min-width: $phone-landscape) {
-
-}
 @media (min-width: $tablet-portrait) {
 
 }
@@ -435,6 +444,16 @@
     &__hero {
       padding: 180px 0 0;
       height: 738px;
+
+      &_inner {
+        height: auto;
+        padding: 266px 0 112px;
+        text-align: center;
+      }
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 46px;
     }
   }
 }
