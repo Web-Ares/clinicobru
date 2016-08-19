@@ -5,6 +5,7 @@
   min-width: 320px;
   min-height: 100%;
   @include main-font2();
+  color: $main-text-color;
 
   &__header {
     position: absolute;
@@ -447,7 +448,7 @@
 
       &_inner {
         height: auto;
-        padding: 266px 0 112px;
+        padding: 266px 0 152px;
         text-align: center;
       }
     }

@@ -22,7 +22,7 @@ var paths = {
             contains: [
                 'app/js/jquery.main.js',
                 'app/js/jquery.popup.js',
-                'app/js/jquery.index.js'
+                'app/js/jquery.btns.js'
             ]
         },
         {
@@ -35,6 +35,14 @@ var paths = {
             dist: 'downloads.min.js',
             contains: [
                 'app/js/jquery.main.js'
+            ]
+        },
+        {
+            dist: 'services.min.js',
+            contains: [
+                'app/js/jquery.main.js',
+                'app/js/jquery.accordion.js',
+                'app/js/jquery.btns.js'
             ]
         }
     ],
