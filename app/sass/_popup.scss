@@ -8,7 +8,7 @@
   width: 0;
   height: 0;
   z-index: 10000;
-  padding-top: 40px;
+  padding: 140px 15px;
   background: $popup-back;
   text-align: center;
   transition: opacity 500ms ease-in-out;
@@ -28,31 +28,23 @@
   &__wrap {
     position: relative;
     z-index: 2;
-    max-width: 700px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    &_top {
-      top: -40px !important;
-    }
+    box-shadow: 1px 0 20px rgba(1,1,1, .1);
   }
-
   &__content {
     display: none;
     text-align: left;
-    padding: 15px;
+    padding: 40px 0 0;
     background: #fff;
   }
 
   &__close {
-    position: absolute;
-    top: -55px;
-    right: -5px;
+    @include absoluteCenterX();
+    top: -102px;
     cursor: pointer;
-    height: 34px;
-    padding: 7px 19px;
+    height: 44px;
+    padding: 0 26px;
 
     &:after,
     &:before {
@@ -60,8 +52,8 @@
       top: 50%;
       left: 0;
       right: 0;
-      height: 3px;
-      background: $main-white-color;
+      height: 2px;
+      background: $popup-close-back;
       transform-origin: center;
       content: '';
       @include transition(background, .3, 0);
@@ -93,38 +85,13 @@
     width: 100px;
     height: 100px;
   }
-
-  &__video {
-    position: relative;
-
-    iframe {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    p {
-      margin-bottom: 20px;
-      font-size: 18px;
-      line-height: 26px;
-      color: $main-text-color;
-
-      a {
-        color: $main-blue-color;
-        @include transition(color, .3, 0);
-
-        &:hover {
-          color: $main-title-color;
-        }
-      }
-    }
-  }
 }
 @media (min-width: $tablet-portrait) {
 
   .popup {
 
-    &__close {
-      top: -40px;
-      right: -39px;
+    &__content {
+      padding-top: 109px;
     }
   }
 }

@@ -1,0 +1,192 @@
+
+
+.chat {
+  padding: 0 15px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__header-user {
+    width: 49%;
+    text-align: center;
+  }
+  &__header-user-ava {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
+
+    &_blue {
+
+      svg {
+
+        path,
+        circle {
+          stroke: $main-blue-color;
+          fill: $main-blue-color;
+        }
+      }
+    }
+    &_yellow {
+
+      svg {
+
+        path,
+        circle {
+          stroke: #f7cc0a;
+          fill: #f7cc0a;
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    svg {
+      position: relative;
+      left: -2px;
+      width: 108%;
+    }
+  }
+  &__header-user-wrap {
+    display: inline-block;
+    vertical-align: top;
+
+    strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+      letter-spacing: -0.4px;
+      @include main-font7();
+    }
+    span {
+      padding-left: 2px;
+      font-size: 16px;
+      color: #999999;
+      letter-spacing: -0.4px;
+      @include main-font4();
+    }
+  }
+  &__wrap {
+    position: relative;
+    padding-bottom: 85px;
+
+    .btn-main {
+      position: absolute;
+      right: 0;
+      bottom: 41px;
+    }
+  }
+  &__inner {
+    margin-bottom: 20px;
+  }
+  &__item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    @include main-font1();
+
+    > span {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 30px;
+    }
+
+    &_left {
+      text-align: left;
+    }
+    &_right {
+      text-align: right;
+    }
+    &_blue {
+
+      span {
+        background: $main-blue-color;
+        color: $main-white-color;
+      }
+    }
+    &_yellow {
+
+      span {
+        background: #f7cc0a;
+      }
+    }
+    &_grey {
+
+      span {
+        background: #eeeeee;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .chat {
+
+    &__header {
+
+    }
+    &__header-user {
+      width: auto;
+      text-align: left;
+    }
+    &__header-user-ava {
+      top: -10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 60px;
+      height: auto;
+      margin-right: 23px;
+    }
+    &__header-user-wrap {
+
+      strong {
+        margin-bottom: 9px;
+        font-size: 20px;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+    &__wrap {
+      position: relative;
+      padding-bottom: 124px;
+
+      .btn-main {
+        bottom: 91px;
+      }
+    }
+    &__inner {
+      margin-bottom: 40px;
+    }
+    &__item {
+      margin-bottom: 10px;
+      font-size: 20px;
+
+      > span {
+        padding: 17px 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+}
+
+@media (min-width: $desktop) {
+
+  .chat {
+    padding: 0 100px;
+
+    &__header {
+      margin-bottom: 87px;
+    }
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+}
