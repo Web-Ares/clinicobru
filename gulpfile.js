@@ -44,6 +44,12 @@ var paths = {
                 'app/js/jquery.accordion.js',
                 'app/js/jquery.btns.js'
             ]
+        },
+        {
+            dist: 'case-study-single.min.js',
+            contains: [
+                'app/js/jquery.main.js'
+            ]
         }
     ],
     vendorScripts: 'app/js/vendors/**/*.js',

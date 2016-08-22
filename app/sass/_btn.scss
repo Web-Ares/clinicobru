@@ -49,6 +49,49 @@
     background: $main-blue-color;
     color: $main-white-color;
   }
+  &_2 {
+    height: auto;
+    padding: 1px 17px 0;
+    border: 2px solid $main-white-color;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    color: $main-white-color;
+
+    &:hover {
+      background: $main-white-color;
+      color: $main-blue-color;
+    }
+  }
+}
+.btn-back {
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  display: inline-block;
+  padding-left: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $main-white-color;
+  @include main-font7();
+
+  &:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 6px;
+    background: url(../img/arrow-back.png) no-repeat;
+    background-size: contain;
+    @include transition(transform, .3, 0);
+    content: '';
+  }
+  &:hover {
+
+    &:before {
+      transform: translateX(-3px);
+    }
+  }
 }
 
 @media (min-width: $tablet-portrait) {
@@ -72,5 +115,20 @@
     padding: 0 30px;
     font-size: 14px;
     line-height: 52px;
+
+    &_2 {
+      height: auto;
+      padding: 1px 17px 0;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+  .btn-back {
+    top: 3px;
+    bottom: auto;
+    left: -279px;
   }
 }
