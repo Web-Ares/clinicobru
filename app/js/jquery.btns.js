@@ -15,7 +15,8 @@
         //private properties
         var _self = this,
             _obj = obj,
-            _canvas = _obj.find('canvas'),
+            _canvas = _obj.find('canvas').eq(1),
+            _canvasShadow = _obj.find('canvas').eq(0),
             _window = $( window );
 
         //private methods
@@ -31,9 +32,10 @@
             },
             _drawCanvas = function () {
 
-                if ( _canvas[0].getContext ){
+                if ( _canvas[0].getContext && _canvasShadow[0].getContext ){
 
                     var ctx = _canvas[0].getContext( '2d' ),
+                        ctxShadow = _canvasShadow[0].getContext( '2d' ),
                         width = _obj.width(),
                         height = _obj.height(),
                         fillBtn = _obj.data('fill'),
@@ -41,6 +43,8 @@
 
                     _canvas[0].width = width;
                     _canvas[0].height = height;
+                    _canvasShadow[0].width = width;
+                    _canvasShadow[0].height = height;
 
                     if (_window.width() < 768) {
 
@@ -48,13 +52,13 @@
 
                         if (_obj.hasClass('btn_1')) {
 
-                            ctx.beginPath();
-                            ctx.moveTo(10,0);
-                            ctx.lineTo(270,0);
-                            ctx.lineTo(280,60);
-                            ctx.lineTo(22,60);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(10,0);
+                            ctxShadow.lineTo(270,0);
+                            ctxShadow.lineTo(280,60);
+                            ctxShadow.lineTo(22,60);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(0,10);
@@ -64,15 +68,17 @@
                             ctx.fillStyle = fillBtn;
                             ctx.fill();
 
-                        }else if(_obj.hasClass('btn_2')){
+                        }
 
-                            ctx.beginPath();
-                            ctx.moveTo(10,0);
-                            ctx.lineTo(270,0);
-                            ctx.lineTo(260,51);
-                            ctx.lineTo(0,60);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                        else if(_obj.hasClass('btn_2')){
+
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(10,0);
+                            ctxShadow.lineTo(270,0);
+                            ctxShadow.lineTo(260,51);
+                            ctxShadow.lineTo(0,60);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(20,10);
@@ -84,13 +90,13 @@
 
                         }else if (_obj.hasClass('btn_3')) {
 
-                            ctx.beginPath();
-                            ctx.moveTo(20,10);
-                            ctx.lineTo(280,10);
-                            ctx.lineTo(260,61);
-                            ctx.lineTo(10,70);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(20,10);
+                            ctxShadow.lineTo(280,10);
+                            ctxShadow.lineTo(260,61);
+                            ctxShadow.lineTo(10,70);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(10,0);
@@ -99,22 +105,19 @@
                             ctx.lineTo(0,60);
                             ctx.fillStyle = fillBtn;
                             ctx.fill();
-
                         }
-
-
 
                     } else {
 
                         if (_obj.hasClass('btn_1')) {
 
-                            ctx.beginPath();
-                            ctx.moveTo(10,0);
-                            ctx.lineTo(358,0);
-                            ctx.lineTo(368,81);
-                            ctx.lineTo(32,81);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(10,0);
+                            ctxShadow.lineTo(358,0);
+                            ctxShadow.lineTo(368,81);
+                            ctxShadow.lineTo(32,81);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(0,10);
@@ -124,15 +127,16 @@
                             ctx.fillStyle = fillBtn;
                             ctx.fill();
 
-                        }else if(_obj.hasClass('btn_2')){
+                        }
+                        else if(_obj.hasClass('btn_2')){
 
-                            ctx.beginPath();
-                            ctx.moveTo(10,0);
-                            ctx.lineTo(358,0);
-                            ctx.lineTo(337,71);
-                            ctx.lineTo(0,81);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(10,0);
+                            ctxShadow.lineTo(358,0);
+                            ctxShadow.lineTo(337,71);
+                            ctxShadow.lineTo(0,81);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(20,10);
@@ -144,13 +148,13 @@
 
                         }else if (_obj.hasClass('btn_3')) {
 
-                            ctx.beginPath();
-                            ctx.moveTo(20,10);
-                            ctx.lineTo(369,10);
-                            ctx.lineTo(349,81);
-                            ctx.lineTo(10,91);
-                            ctx.fillStyle = fillShadow;
-                            ctx.fill();
+                            ctxShadow.beginPath();
+                            ctxShadow.moveTo(20,10);
+                            ctxShadow.lineTo(369,10);
+                            ctxShadow.lineTo(349,81);
+                            ctxShadow.lineTo(10,91);
+                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.fill();
 
                             ctx.beginPath();
                             ctx.moveTo(10,0);
@@ -161,9 +165,7 @@
                             ctx.fill();
 
                         }
-
                     }
-
                 }
             },
             _init = function() {

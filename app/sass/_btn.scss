@@ -22,6 +22,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    @include transition(all, .3, 0);
   }
   &_1,
   &_2,
@@ -116,6 +117,27 @@
     }
     &_3 {
       line-height: 83px;
+    }
+
+    &_1 {
+
+      &:hover {
+
+        canvas:first-of-type {
+          -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+        }
+      }
+    }
+    &_3 {
+
+      &:hover {
+
+        canvas:first-of-type {
+          -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+        }
+      }
     }
   }
   .btn-main {
