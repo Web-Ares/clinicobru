@@ -45,9 +45,17 @@
   @include main-font7();
   transition: background .3s, color .3s;
 
+  span {
+    color: $main-blue-color;
+    @include transition(color, .3, 0);
+  }
   &:hover {
     background: $main-blue-color;
     color: $main-white-color;
+
+    span {
+      color: $main-white-color;
+    }
   }
   &_2 {
     height: auto;

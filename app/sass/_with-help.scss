@@ -1,0 +1,129 @@
+
+.with-help {
+  margin-bottom: 40px;
+  background: #f7fbff;
+
+  .site__centered {
+    padding: 40px 15px;
+  }
+  &__title {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    @include main-font7();
+  }
+  &__wrap {
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      max-width: 100%;
+
+      &:last-child {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        @include transition(transform, .3, 0);
+      }
+      &:hover {
+
+        img {
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .with-help {
+
+    .site__centered {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 288px;
+      padding: 0 15px;
+    }
+    &__title {
+      top: -14px;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 0;
+    }
+    &__wrap {
+      display: inline-block;
+      vertical-align: top;
+      width: 64.5%;
+      padding-top: 5px;
+
+      a {
+        margin-right: 91px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}
+
+@media (min-width: $desktop) {
+
+  .with-help {
+    margin-bottom: 117px;
+    background: #f7fbff;
+
+    .site__centered {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 288px;
+    }
+    &__title {
+      position: relative;
+      top: -14px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 24px;
+      line-height: 36px;
+      @include main-font7();
+    }
+    &__wrap {
+      display: inline-block;
+      vertical-align: top;
+      width: 64.5%;
+      padding-top: 5px;
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 91px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          @include transition(transform, .3, 0);
+        }
+        &:hover {
+
+          img {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+
+}

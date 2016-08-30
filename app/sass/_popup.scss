@@ -32,6 +32,7 @@
     margin: 0 auto;
     box-shadow: 1px 0 20px rgba(1,1,1, .1);
   }
+
   &__content {
     display: none;
     text-align: left;
@@ -92,6 +93,10 @@
 
     &__content {
       padding-top: 109px;
+
+      &_person {
+        padding-top: 74px;
+      }
     }
   }
 }

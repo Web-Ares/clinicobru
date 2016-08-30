@@ -1,0 +1,129 @@
+
+.person {
+  padding: 0 15px 40px;
+  text-align: center;
+
+  &_no-ava {
+
+    .person__ava {
+      margin-bottom: 30px;
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 1;
+    @include main-font7();
+  }
+  &__ava {
+    position: relative;
+    height: 313px;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    border-radius: 0 0 33% 33%;
+
+    img {
+      position: relative;
+    }
+    &:before {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 260px;
+      height: 260px;
+      margin-left: -130px;
+      border-radius: 50%;
+      background: #f7f7f7;
+      content: '';
+    }
+  }
+  &__name {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1;
+    @include main-font7();
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      color: #999;
+      @include main-font4();
+    }
+  }
+  &__expirience {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.7px;
+    @include main-font5();
+  }
+  &__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    @include main-font4();
+  }
+  .btn-main {
+    padding: 0 5px;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .person {
+    padding: 0 94px 60px;
+
+    &_no-ava {
+      padding-top: 22px;
+
+      .person__ava {
+        margin-bottom: 56px;
+      }
+      .person__name {
+        margin-bottom: 73px;
+      }
+    }
+    &__title {
+      margin-bottom: 68px;
+      font-size: 48px;
+    }
+    &__name {
+      font-size: 36px;
+
+      span {
+        font-size: 18px;
+        line-height: 31px;
+      }
+    }
+    &__expirience {
+      font-size: 25px;
+      line-height: 36px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .btn-main {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
