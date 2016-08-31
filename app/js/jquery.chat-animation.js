@@ -35,24 +35,35 @@
             _animationMessages = function ( dataChat ) {
 
                 var curChat = $('.popup__content').filter('.popup__'+dataChat+''),
+                    curChatBtn = curChat.find('.btn-main'),
                     messages = curChat.find('.chat__item > span'),
-                    delay = 100;
-
-                console.log(messages.length);
+                    delay = 100,
+                    i = 1;
 
                 messages.each( function(){
 
-                    var curMessages = $( this) ;
+                    var curMessage = $( this);
 
-                    if( !curMessages.hasClass( 'new' ) ) {
+                    if( !curMessage.hasClass( 'new' ) ) {
 
                         setTimeout(function(){
 
-                            curMessages.addClass( 'new' )
+                            curMessage.addClass( 'new' )
 
-                        }, delay);
+                        }, delay );
 
-                        delay+=700
+                        i+=1;
+                        delay+=2000;
+
+                        if ( i >= messages.length ) {
+
+                            setTimeout(function(){
+
+                                curChatBtn.addClass( 'animate' )
+
+                            }, delay + 2000 );
+
+                        }
                     }
                 });
 
