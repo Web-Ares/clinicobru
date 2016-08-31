@@ -73,18 +73,18 @@
                         else if(_obj.hasClass('btn_2')){
 
                             ctxShadow.beginPath();
-                            ctxShadow.moveTo(10,0);
-                            ctxShadow.lineTo(270,0);
-                            ctxShadow.lineTo(260,51);
-                            ctxShadow.lineTo(0,60);
-                            ctxShadow.fillStyle = fillShadow;
+                            ctxShadow.moveTo(10,10);
+                            ctxShadow.lineTo(270,10);
+                            ctxShadow.lineTo(250,60);
+                            ctxShadow.lineTo(0,70);
+                            ctxShadow.fillStyle = '#ffffff';
                             ctxShadow.fill();
 
                             ctx.beginPath();
-                            ctx.moveTo(20,10);
-                            ctx.lineTo(280,10);
-                            ctx.lineTo(260,60);
-                            ctx.lineTo(10,70);
+                            ctx.moveTo(20,0);
+                            ctx.lineTo(280,0);
+                            ctx.lineTo(260,50);
+                            ctx.lineTo(10,60);
                             ctx.fillStyle = fillBtn;
                             ctx.fill();
 
@@ -131,18 +131,18 @@
                         else if(_obj.hasClass('btn_2')){
 
                             ctxShadow.beginPath();
-                            ctxShadow.moveTo(10,0);
-                            ctxShadow.lineTo(358,0);
-                            ctxShadow.lineTo(337,71);
-                            ctxShadow.lineTo(0,81);
+                            ctxShadow.moveTo(10,10);
+                            ctxShadow.lineTo(358,10);
+                            ctxShadow.lineTo(337,81);
+                            ctxShadow.lineTo(0,91);
                             ctxShadow.fillStyle = fillShadow;
                             ctxShadow.fill();
 
                             ctx.beginPath();
-                            ctx.moveTo(20,10);
-                            ctx.lineTo(368,10);
-                            ctx.lineTo(348,81);
-                            ctx.lineTo(10,91);
+                            ctx.moveTo(20,0);
+                            ctx.lineTo(368,0);
+                            ctx.lineTo(348,71);
+                            ctx.lineTo(10,81);
                             ctx.fillStyle = fillBtn;
                             ctx.fill();
 
