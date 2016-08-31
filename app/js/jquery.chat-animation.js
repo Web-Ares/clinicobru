@@ -53,7 +53,7 @@
                         }, delay );
 
                         i+=1;
-                        delay+=2000;
+                        delay+=2300;
 
                         if ( i >= messages.length ) {
 
@@ -61,7 +61,7 @@
 
                                 curChatBtn.addClass( 'animate' )
 
-                            }, delay + 2000 );
+                            }, delay + 2300 );
 
                         }
                     }
