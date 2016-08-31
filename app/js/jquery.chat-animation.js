@@ -23,10 +23,9 @@
 
                 _openChatBtn.on( {
                     click: function () {
-                        console.log(2000);
 
                         var curData = $( this ).attr( 'data-popup' );
-                        console.log(_chatMessages.length);
+
                         _chatMessages.removeClass( 'new' );
                         _animationMessages( curData );
                     }
@@ -42,8 +41,6 @@
                 console.log(messages.length);
 
                 messages.each( function(){
-
-                    console.log(delay);
 
                     var curMessages = $( this) ;
 
