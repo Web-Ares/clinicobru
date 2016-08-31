@@ -100,14 +100,14 @@
       text-align: left;
 
       > span.new {
-        animation: moveInLeft .7s forwards;
+        animation: moveInLeft 1s forwards;
       }
     }
     &_right {
       text-align: right;
 
       > span.new {
-        animation: moveInRight .7s forwards;
+        animation: moveInRight 1s forwards;
       }
     }
     &_blue {
