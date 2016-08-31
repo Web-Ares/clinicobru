@@ -22,7 +22,8 @@ var paths = {
             contains: [
                 'app/js/jquery.main.js',
                 'app/js/jquery.popup.js',
-                'app/js/jquery.btns.js'
+                'app/js/jquery.btns.js',
+                'app/js/jquery.chat-animation.js'
             ]
         },
         {

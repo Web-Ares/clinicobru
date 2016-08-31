@@ -15,7 +15,7 @@
       margin-bottom: 9px;
       font-size: 20px;
       line-height: 1;
-      color: #bbb;
+      color: $about-us-subtitle-color;
       @include main-font4();
     }
   }
@@ -159,7 +159,7 @@
       height: 260px;
       margin-left: -130px;
       border-radius: 50%;
-      background: #f7f7f7;
+      background: $about-us-pic-circle-bg;
       content: '';
       -webkit-transform: scale(1);
       transform: scale(1);
@@ -168,7 +168,7 @@
   }
   &__names {
     padding: 40px 0 3px;
-    background: #f7fbff;
+    background: $about-us-name-bg;
   }
   &__names-wrap {
     margin-bottom: 40px;
@@ -194,7 +194,7 @@
         p {
           font-size: 16px;
           line-height: 20px;
-          color: #999;
+          color: $about-us-name-color;
           white-space: pre-line;
           letter-spacing: -0.2px;
         }
@@ -289,100 +289,31 @@
       margin-bottom: 40px;
       font-size: 48px;
       line-height: 52px;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      @include main-font7();
 
       span {
-        display: block;
-        margin-bottom: 9px;
         font-size: 24px;
-        line-height: 1;
-        color: #bbb;
-        @include main-font4();
       }
     }
     &__founders {
       margin-bottom: 82px;
-
-      .site__centered {
-        display: flex;
-        justify-content: space-between;
-      }
     }
     &__founders-text {
-      display: inline-block;
-      vertical-align: top;
-      width: 60%;
-      max-width: 670px;
 
       p {
         margin-bottom: 34px;
         font-size: 24px;
         line-height: 36px;
-        @include main-font5();
       }
       > span {
         margin-bottom: 30px;
-        display: block;
         font-size: 18px;
         line-height: 28px;
-        @include main-font4();
       }
-    }
-    &__founders-pics {
-      display: inline-block;
-      vertical-align: top;
-      width: 39%;
-      max-width: 370px;
-      padding-top: 3px;
-
-      li {
-        margin-bottom: 86px;
-        text-align: center;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-        a {
-          display: inline-block;
-          background-size: contain;
-
-          img {
-            opacity: 0;
-            @include transition(opacity, .3, 0);
-          }
-          &:hover {
-
-            img {
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
-    &__info {
-
     }
     &__info-item {
-      display: flex;
-      justify-content: space-between;
       margin-bottom: 79px;
 
-      .about-us__title {
-        display: inline-block;
-        vertical-align: top;
-        width: 30%;
-        max-width: 370px;
-      }
-
       div {
-        display: inline-block;
-        vertical-align: top;
-        width: 69%;
-        max-width: 770px;
-        margin-top: -5px;
-        @include main-font1();
 
         p {
           margin-bottom: 32px;
@@ -390,8 +321,6 @@
           line-height: 36px;
         }
         span {
-          display: block;
-          margin-bottom: 30px;
           font-size: 18px;
           line-height: 28px;
         }
@@ -409,123 +338,35 @@
       justify-content: space-between;
     }
     &__team-item {
-      display: inline-block;
-      vertical-align: top;
       width: 31.7%;
-      padding: 51px 20px 56px;
-      border: 1px solid transparent;
-      text-align: center;
-      @include transition(border-color, .3, 0);
 
-      span {
-        display: block;
-        font-size: 24px;
-        line-height: 36px;
-        @include main-font7();
-      }
       .btn-main {
-        visibility: hidden;
-        opacity: 0;
         padding: 0 41px;
-        @include transition(all, .3, 0);
-      }
-      &:hover {
-        border-color: $main-border-color;
-
-        .about-us__team-item-pic {
-
-          &:before {
-            opacity: 0;
-            -webkit-transform: scale(0);
-            transform: scale(0);
-          }
-        }
-        .btn-main {
-          visibility: visible;
-          opacity: 1;
-        }
-      }
-    }
-    &__team-item-pic {
-      position: relative;
-      height: 313px;
-      display: inline-block;
-      padding-top: 25px;
-      border-radius: 0 0 33% 33%;
-
-      img {
-        position: relative;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-      }
-      &:before {
-        opacity: 1;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 260px;
-        height: 260px;
-        margin-left: -130px;
-        border-radius: 50%;
-        background: #f7f7f7;
-        content: '';
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        @include transition(all, .3, 0);
       }
     }
     &__names {
       padding: 117px 0 3px;
-      background: #f7fbff;
-
-      .site__centered {
-
-      }
     }
     &__names-wrap {
-      display: flex;
-      justify-content: space-between;
       margin-bottom: 60px;
-
-      .about-us__title {
-        display: inline-block;
-        vertical-align: top;
-        width: 30%;
-        margin-left: -5px;
-      }
     }
     &__names-inner {
-      display: inline-block;
-      vertical-align: top;
-      width: 65.9%;
 
       ul {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 49px;
 
         li {
-          display: inline-block;
-          vertical-align: top;
-          width: 48.2%;
 
           span {
-            display: block;
             font-size: 24px;
             line-height: 28px;
-            @include main-font7();
           }
           p {
             font-size: 18px;
             line-height: 28px;
-            color: #999;
-            white-space: pre-line;
-            letter-spacing: -0.2px;
           }
         }
       }
     }
   }
-
 }
