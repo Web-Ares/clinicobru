@@ -266,6 +266,12 @@
     &_inner {
       padding: 105px 15px 80px;
       text-align: center;
+
+      .btn-main {
+        margin: 17px 0 -45px;
+        font-size: 12px;
+        padding: 0 13px;
+      }
     }
     &_case {
 
@@ -318,6 +324,20 @@
 }
 
 @media (min-width: $tablet-portrait) {
+
+  .site {
+
+    &__hero {
+
+      &_inner {
+
+        .btn-main {
+          font-size: 14px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
 
 }
 @media (min-width: $tablet-landscape) {
@@ -504,6 +524,10 @@
         //padding: 266px 0 152px;
         padding: 216px 0 102px;
         text-align: center;
+
+        .btn-main {
+          margin: 57px 0 -62px;
+        }
       }
       &_case {
         padding: 266px 0 71px;
