@@ -1,11 +1,12 @@
 
 .patient {
-  padding: 40px 0 0;
+  //padding: 40px 0 0;
+  padding: 2vh 0 0;
 
   &__text {
     width: 100%;
     max-width: 460px;
-    margin-bottom: 40px;
+    margin-bottom: 2vh;
 
     p {
       font-size: 18px;
@@ -17,7 +18,7 @@
   }
   &__profit {
     position: relative;
-    padding: 40px 15px 40px;
+    padding: 2vh 15px;
     margin: 0 -15px;
     color: $main-white-color;
     @include main-font7();
@@ -26,7 +27,7 @@
     > span {
       position: relative;
       display: block;
-      margin-bottom: 23px;
+      margin-bottom: 2vh;
       font-size: 18px;
       text-transform: uppercase;
       letter-spacing: -0.6px;
@@ -34,7 +35,7 @@
     h2 {
       position: relative;
       left: -1px;
-      margin-bottom: 40px;
+      margin-bottom: 2vh;
       font-size: 26px;
       text-transform: uppercase;
       line-height: 30px;
@@ -59,7 +60,7 @@
       position: relative;
       display: inline-block;
       vertical-align: top;
-      margin-top: -68px;
+      margin-top: -80px;
       width: 53.9%;
       padding: 60px 55px 158px 120px;
       background: none;
@@ -94,11 +95,13 @@
     &__text {
       width: 100%;
       max-width: 460px;
-      padding-top: 53px;
+      //padding-top: 53px;
+      padding-top: 4vh;
 
       p {
         font-size: 24px;
-        line-height: 36px;
+        //line-height: 36px;
+        line-height: 5vh;
       }
     }
     &__profit {
@@ -106,17 +109,19 @@
       margin: -226px 0 0;
       min-height: 462px;
       width: 47.9%;
-      padding: 77px 0 79px 126px;
+      //padding: 77px 0 79px 126px;
+      padding: 8vh 0 79px 126px;
 
       &:before {
         background-size: contain;
       }
       > span {
-        margin-bottom: 23px;
+        //margin-bottom: 23px;
+        margin-bottom: 2.5vh;
         font-size: 18px;
       }
       h2 {
-        margin-bottom: 36px;
+        margin-bottom: 3.7vh;
         font-size: 48px;
         line-height: 46px;
         letter-spacing: -1.3px;

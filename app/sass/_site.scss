@@ -259,11 +259,12 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    min-height: 227px;
+    min-height: 38.3vh;
     background-size: cover;
     background-position: center;
 
     &_inner {
+      min-height: 227px;
       padding: 105px 15px 80px;
       text-align: center;
 
@@ -328,8 +329,10 @@
   .site {
 
     &__hero {
+      min-height: 74vh;
 
       &_inner {
+        min-height: 227px;
 
         .btn-main {
           font-size: 14px;
@@ -517,7 +520,8 @@
     }
     &__hero {
       padding: 180px 0 0;
-      height: 738px;
+      //height: 738px;
+      height: 77.9vh;
 
       &_inner {
         height: auto;
