@@ -43,7 +43,7 @@
                     messagesWrap = curChat.find('.chat__inner'),
                     // messages = curChat.find('.chat__item > span'),
                     delay = 100,
-                    i = 1;
+                    i;
 
                 messagesWrap.css({
                     height: 0
@@ -78,7 +78,7 @@
                             }, delay );
 
                             i+=1;
-                            delay+=2500;
+                            delay+=2000;
 
                             if ( curWrap.next().length || curMessage.parent().next().length ) {
 
@@ -90,17 +90,6 @@
                                 }, delay );
 
                             }
-
-                            // if ( i >= curMessage.length ) {
-                            //
-                            //     setTimeout(function(){
-                            //
-                            //         curWrap.next().slideDown(200)
-                            //
-                            //     }, delay += 4000 );
-                            //
-                            // }
-
                         }
                     });
 
