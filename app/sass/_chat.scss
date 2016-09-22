@@ -72,17 +72,6 @@
   &__wrap {
     position: relative;
     padding-bottom: 15px;
-    //
-    //.btn-main {
-    //  opacity: 0;
-    //  position: absolute;
-    //  right: 0;
-    //  bottom: 41px;
-    //
-    //  &.animate {
-    //    animation: rotateInUp 1s forwards;
-    //  }
-    //}
   }
   &__inner {
     //margin-bottom: 20px;
@@ -170,6 +159,14 @@
         background: #eeeeee;
       }
     }
+    &_inner-btn {
+
+      span {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
   }
 }
 @-webkit-keyframes moveInBottom {
@@ -238,19 +235,9 @@
       justify-content: space-around;
       padding-bottom: 7px;
       min-height: 307px;
-      //
-      //.btn-main {
-      //  bottom: 91px;
-      //}
     }
     &__inner {
-      //display: none;
       width: 100%;
-      //margin-bottom: 40px;
-      //
-      //&:last-child {
-      //  margin-bottom: 0;
-      //}
     }
     &__item {
       display: none;
@@ -264,11 +251,17 @@
 
         &.new {
           width: 38.4%;
-          //font-size: 24px;
         }
         &.prev {
           width: auto;
-          //font-size: 18px;
+        }
+      }
+      &_inner-btn {
+
+        span {
+          text-align: center;
+          padding-top: 0;
+          padding-bottom: 0;
         }
       }
     }
